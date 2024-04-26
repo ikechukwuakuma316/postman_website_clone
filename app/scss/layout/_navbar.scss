@@ -1,0 +1,77 @@
+
+@use '../util' as u;
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    ul {
+      text-align: start;
+      list-style-type: none;
+      list-style-type: none;
+      margin: 0;
+      padding: 15px;
+      li {
+        display: inline;
+        font-family: "Fira Sans", sans-serif;
+        font-size: 13px;
+        a {
+          color: rgb(90, 90, 90);
+          text-decoration: none;
+          padding: 14px;
+          &:hover {
+            background-color: #111;
+          }
+        }
+      }
+    }
+  }
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  gap: u.rem(40);
+  // max-width: 1000px;
+  width: min(100% - u.rem(40), u.rem(1000));
+  margin-inline: auto;
+
+  @include u.breakpoint(large) {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  &__main,
+  &__sidebar {
+    padding: u.rem(40);
+  }
+
+  &__main {
+    background-color: hsl(240, 99%, 33%);
+
+    @include u.breakpoint(medium) {
+      background-color: hsl(120, 100%, 16%);
+    }
+
+    @include u.breakpoint(large) {
+      background-color: hsl(39, 100%, 35%);
+    }
+  }
+
+  &__sidebar {
+    @include u.breakpoint-down(medium) {
+      text-align: center;
+    }
+
+    @include u.breakpoint-down(small) {
+      text-align: right;
+    }
+  }
+
+  &__widget {
+    padding: u.rem(16);
+  }
+}

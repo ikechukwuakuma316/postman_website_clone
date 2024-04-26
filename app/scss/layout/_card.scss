@@ -1,0 +1,39 @@
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    
+    padding: 76px max(-612px + 50vw, 48px) 60px;
+  }
+  
+  .card {
+    // width: calc(20% - 15px); // Adjust according to your layout
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin: 20px;
+    border: 0.1px solid #6b6b6b;
+    text-align: center;
+  }
+  
+  .card__title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    text-align: left;
+  }
+  
+  .card__image {
+    width: 40px; // Adjust according to your image size
+    height: 40px; // Adjust according to your image size
+    margin-bottom: 15px;
+    
+  }
+  
+  .card__paragraph {
+    font-size:small;
+    color: black;
+    font-weight: 400;
+    text-align: left;
+  }
+  

@@ -1,0 +1,27 @@
+@use '../util' as u;
+
+.hero{
+    display: flex;
+    align-items: center;
+        .row_1 {
+            p {
+                padding-top: 100px;
+                padding-left: 150px;
+                margin-right: 90px;
+                float: left;
+                color: black;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 28px;
+            }
+        }
+    
+        .row_2 {
+            img {
+                width: 994px;
+                height: 610px;  
+                float: right;
+            }   
+        }
+    
+}

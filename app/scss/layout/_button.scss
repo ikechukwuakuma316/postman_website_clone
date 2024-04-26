@@ -1,0 +1,27 @@
+.centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    // height: 100vh; /* Centers vertically */
+  }
+  
+  .button {
+
+    // display: inline-flex; 
+    align-items: center;
+    cursor: pointer; 
+    box-sizing: border-box;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+  
+  .button:hover {
+    background-color: #e3e0e0; /* Change background color on hover */
+    border: 1px solid rgb(0, 0, 0);
+  }
+  
