@@ -1,0 +1,92 @@
+$box-width: 1300px;
+$box-height: 300px;
+$border-color: #444;
+
+.get-started {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: $box-width;
+  height: $box-height;
+//   border: 0.2px solid $border-color;
+  border-radius: 8px;
+  margin: auto;
+  background-color: #f5f5f5;
+}
+
+.first-text {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+label{
+    position: relative;
+    
+}
+input[type="text"]{
+    margin-top: 10px;
+    border: none;
+    width: 400px;
+    height: 50px;
+    font-size: 14px;
+    padding: 12px 12px;
+}
+button{
+    height: 50px;
+    padding: 0px 18px;
+    margin-top: 0px;
+    border-radius: 2px 2px 2px 2px;
+    // position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(224, 67, 0);
+    color: white;
+    padding: 12px 18px;
+    // letter-spacing: 2px;
+    font-size: 14px;
+    border: 1px solid orangered;
+    cursor: pointer;
+}
+
+button:hover{
+    transition: .8s;
+    background-color: #c93600;
+    border: 1px solid orangered;
+}
+
+.left-side, .right-side {
+  flex: 1;
+}
+
+.left-side {
+  padding: 30px;
+}
+
+.right-side {
+  padding: 30px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 1px solid #666;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #666;
+  color: #fff;
+}

@@ -1,0 +1,56 @@
+.spolight-container {
+    .spot {
+        margin: 230px 200px 35px 200px;
+        // top right bottom left
+        .spotlight {
+            font-weight: 600;
+            word-break: normal; 
+            font-size: 24px;
+            color: black;
+            margin-bottom: 12px;
+            letter-spacing: -0.72px;
+        }
+        .text {
+            font-size: small;
+            color: black;
+        }
+      
+    }
+
+    .row-1 {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 670px 30px 200px;
+
+        .trending {
+            // flex: 1;
+            text-align: left;
+            // margin-top: 40px;
+            color: black;
+            font-weight: 600;
+            font-size: 15px;
+           
+            .text {
+                font-size: small;
+                color: black;
+                font-weight: 100;
+            }
+        }
+
+        .note {
+            // flex: 1;
+           
+            text-align: right;
+            color: black;
+            font-weight: 600;
+            font-size: 15px;
+          
+            .text {
+                font-size: small;
+                color: black;
+                font-weight: 100;
+                align-items:flex-start;
+            }
+        }
+    }
+}

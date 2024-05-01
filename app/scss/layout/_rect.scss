@@ -1,0 +1,72 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+.rect-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.side {
+  width: 35%;
+  height: 30%;
+}
+
+.rectangle {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  position: relative; // Add this for image positioning
+}
+
+img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px; // Adjust as needed
+  height: auto; // Maintain aspect ratio
+}
+
+h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.icon i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: $primary-color;
+}
+
+.icon span {
+  font-weight: bold;
+}
+
+.side:nth-child(odd) .rectangle:nth-child(odd) {
+  border-top: 10px solid $primary-color;
+}
+
+.side:nth-child(odd) .rectangle:nth-child(even) {
+  border-top: 10px solid $secondary-color;
+}
+
+.side:nth-child(even) .rectangle:nth-child(odd) {
+  border-top: 10px solid $secondary-color;
+}
+
+.side:nth-child(even) .rectangle:nth-child(even) {
+  border-top: 10px solid $primary-color;
+}

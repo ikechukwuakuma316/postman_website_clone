@@ -1,0 +1,32 @@
+@use '../util' as u;
+
+.postcon-container {
+    display: flex;
+    align-items: center;
+    height: 320px;
+    width: 1600px;
+    background-color: rgb(41, 16, 54);
+    padding: 100px;
+    // margin-top: 50px;
+    margin: auto;
+        .row_1 {
+            .h1 {
+               font-size: large;
+               
+            }
+            // .p{
+               
+            // }
+        }
+    
+        .row_2 {
+            img {
+                // position: absolute;
+                width: 568px;
+                // height: 205px;
+                // right: -10px;
+                // bottom: -125px;
+            }   
+        }
+    
+}

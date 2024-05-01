@@ -4,8 +4,12 @@
     display: flex;
     align-items: center;
         .row_1 {
+            .postman-def{
+                color: black;
+                padding-left: 150px;
+            }
             p {
-                padding-top: 100px;
+                padding-top: 10px;
                 padding-left: 150px;
                 margin-right: 90px;
                 float: left;
@@ -18,10 +22,12 @@
     
         .row_2 {
             img {
-                // position: absolute;
+                // position:initial;
                 width: 312px;
-                height: 205px;
-                float: right;
+                // height: 205px;
+                margin-left: 300px;
+                // margin-top: 30px;
+                // float: right;
                 // right: -10px;
                 // bottom: -125px;
             }   
