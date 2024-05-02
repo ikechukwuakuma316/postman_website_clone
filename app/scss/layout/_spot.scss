@@ -3,6 +3,7 @@
 }
 .container-spot {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-left: 190px;
     margin-top: 20px;

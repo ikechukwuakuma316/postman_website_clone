@@ -2,31 +2,37 @@
 
 .postcon-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    height: 320px;
-    width: 1600px;
+    height: 100%;
+    width: 100%;
     background-color: rgb(41, 16, 54);
     padding: 100px;
-    // margin-top: 50px;
     margin: auto;
-        .row_1 {
-            .h1 {
-               font-size: large;
-               
-            }
-            // .p{
-               
-            // }
-        }
     
-        .row_2 {
-            img {
-                // position: absolute;
-                width: 568px;
-                // height: 205px;
-                // right: -10px;
-                // bottom: -125px;
-            }   
+    .row_1 {
+        .h1 {
+            font-size: large;
         }
+    }
     
+    .row_2 {
+        img {
+            // padding-left: 20px;
+            width: 200px;
+        }   
+    }
+
+    @media (max-width: 992px) {
+        .row_2 img {
+
+            display: none; // Hide the image on medium screens
+        }
+    }
+
+    @media (max-width: 768px) {
+        .row_2 img {
+            display: none; // Hide the image on small screens
+        }
+    }
 }

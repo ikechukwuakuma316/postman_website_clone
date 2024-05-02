@@ -1,9 +1,10 @@
-$box-width: 1300px;
+$box-width: 100%;
 $box-height: 300px;
 $border-color: #444;
 
 .get-started {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   width: $box-width;

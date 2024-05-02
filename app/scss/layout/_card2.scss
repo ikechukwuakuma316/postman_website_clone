@@ -1,5 +1,6 @@
 .card-container2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     // align-items: center;
     padding: 76px max(-612px + 50vw, 48px) 60px;
